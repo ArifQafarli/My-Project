@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"
+        integrity="sha512-17AHGe9uFHHt+QaRYieK7bTdMMHBMi8PeWG99Mf/xEcfBLDCn0Gze8Xcx1KoSZxDnv+KnCC+os/vuQ7jrF/nkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+     
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.css"
+        integrity="sha512-2kMudsrYBWCcxclY4978rWU/G/Ieei+00r7u+hFgQa0eCLccFGSMiI7RLL+s3c7InbXkCkts2v3ZwdML2ZBxcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />  -->
+
+</head>
+
+<body>
+    <div class="visible md:hidden w-full bg-white ">
+        <div class="max-w-[90%] mx-auto">
+
+            <div class=" mobile-logo">
+                <img src="./assets/footer-logo.png" class="h-[70px] w-[70px]" alt="">
+            </div>
+            <div>
+                <div class="navbar">
+
+                    <div class="hamburger-menu">
+                        <div class="hamburger"></div>
+                    </div>
+                    <navbar class="sliding-navbar">
+
+                        <ul id="myDIV" class="navbar--items">
+
+                            <li class="navbar--item">
+                                <a href="#">
+                                    <span >
+                                        <ion-icon class="ion  text-[#EC2D3A] p-2 active1 " name="home-outline"></ion-icon>
+                                    </span>
+                                    <span class="title">Home</span>
+                                </a>
+                            </li>
+                            <li class="navbar--item">
+                                <a href="#services">
+                                    <span>
+                                        <ion-icon name="person-outline"
+                                            class="ion  text-[#EC2D3A] p-2 "></ion-icon> </ion-icon>
+                                    </span>
+                                    <span class="title ">Services</span>
+                                </a>
+                            </li>
+                            <li class="navbar--item">
+                                <a href="#about">
+                                    <span >
+                                        <ion-icon class="ion  text-[#EC2D3A] p-2 " name="chatbubble-outline"></ion-icon>
+                                    </span>
+                                    <span class="title">About Us</span>
+                                </a>
+                            </li>
+                            <li class="navbar--item">
+                                <a href="#info">
+                                    <span >
+                                        <ion-icon class="ion  text-[#EC2D3A] p-2 " name="help-outline"></ion-icon>
+                                    </span>
+                                    <span class="title">InfoHub</span>
+                                </a>
+                            </li>
+                            <li class="navbar--item">
+                                <a href="#">
+                                    <span >
+                                        <ion-icon class="ion  text-[#EC2D3A] p-2 " name="settings-outline"></ion-icon>
+                                    </span>
+                                    <span class="title">Online Services</span>
+                                </a>
+                            </li>
+                            <li class="navbar--item">
+                                <a href="#news">
+                                    <span >
+                                        <ion-icon class="ion  text-[#EC2D3A] p-2 " name="reader-outline"></ion-icon>
+                                    </span>
+                                    <span class="title">News</span>
+                                </a>
+                            </li>
+                            <li class="navbar--item">
+                                <a href="#contact">
+                                    <span >
+                                        <ion-icon class="ion  text-[#EC2D3A] p-2 " name="lock-closed-outline"></ion-icon>
+                                    </span>
+                                    <span class="title">Contacts</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </navbar>
+                    <div class="mask"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="w-full ">
+        <div  id="overlay"></div>
+        <div id="hero">
+            <video class="full-image to-bottom" data-mask="50" playsinline="" autoplay="" muted="" loop="">
+                <source src="./assets/highway.mp4" type="video/mp4">
+            </video>
+            <!-- navbar -->
+           
+
+            <div>
+                <div  class=" navigation z-10">
+                    <div class="flex justify-center h-16 "><img
+                        src="./assets/footer-logo.png" alt=""></div>
+                    <ul id="myDIV" class="pt-20">
+                        
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <ion-icon  class="text-[#EC2D3A] ion  active1" name="home-outline"></ion-icon>
+                                </span>
+                                <span class="title">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                <span class="">
+                                    <ion-icon class="text-[#EC2D3A] ion  " name="person-outline"></ion-icon>
+                                </span>
+                                <span class="title">Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <span class="">
+                                    <ion-icon class="text-[#EC2D3A] ion  " name="chatbubble-outline"></ion-icon>
+                                </span>
+                                <span class="title">About Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#info">
+                                <span class="">
+                                    <ion-icon class="text-[#EC2D3A] ion  " name="help-outline"></ion-icon>
+                                </span>
+                                <span class="title">InfoHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="">
+                                    <ion-icon class="text-[#EC2D3A] ion  " name="settings-outline"></ion-icon>
+                                </span>
+                                <span class="title">Online Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news">
+                                <span class="">
+                                    <ion-icon class="text-[#EC2D3A] ion  " name="reader-outline"></ion-icon>
+                                </span>
+                                <span class="title">News</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <span class="">
+                                    <ion-icon class="text-[#EC2D3A] ion  " name="lock-closed-outline"></ion-icon>
+                                </span>
+                                <span class="title">Contacts</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- hero content -->
+
+            <div id="hero-content">
+                <p class="text-white text-[3.5rem] font-semibold">Railway freight
+                <p class="text-white text-[3.5rem] font-semibold"> agent in Azerbaijan.</p>
+                </p>
+
+                <p class="text-white text-2xl mb-10">
+
+                    “EL LOGISTICS GROUP ” CJSC, Azerbaijan is an official freight agent of “Azerbaijan Railways” CJSC
+                    and
+                    logistics provider with a track record of stellar performance locally and worldwide.
+                </p>
+                <a href="#about">
+                <button class="hidden md:block hero-btn">Read More</button></a>
+            </div>
+        </div>
+    </header>
+
+
+
+               <section id="services" class="max-w-[90%] mx-auto mt-20 mb-20">
+        <h2 class="text-2xl">“Terminal and port handling" </h2>
+        <div class="w-16 h-1 bg-[#EC2D3A] ml-2"></div> <br><br>   
+
+        <div class="section-content discovery active ">
+                            <p class="text-[16px]">
+                                Terminal and port handling
+
+We have extensive experience, well-established railway transportation schemes for any routes in Azerbaijan.<br><br> This enables us to make transportation as comfortable, reliable and efficient as possible.
+                            </p>
+                        </div><br><br> 
+
+    </section>
+
+
+
+    <div class="relative">
+
+        <section id="services" class=" max-w-[90%] mx-auto mt-20 mb-20">
+            <h2 class="text-2xl" style="padding: 8px;">Our Services</h2>
+            <div class="w-16 h-1 bg-[#EC2D3A] ml-2 pr-1"></div>
+
+            <div class="flex ">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class=" swiper-slide">
+                                <div class="card">
+                                <div class="scale-image" style="background-image: url('./assets/slide2.png');">
+
+                                    <div class='info'>
+                                        <h3 class='title'> “Inland railway transportation” CJSC
+                                        </h3>
+                                        <a href="services2.html">
+
+                                            <p class='p-1 pt-3 text-sm'>
+                                                We have extensive experience, well-established railway transportation schemes for any routes in Azerbaijan. This enables us to make transportation as comfortable, reliable and efficient as possible.
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="card">
+                                <div class="scale-image" style="background-image: url('./assets/slide4.png');">
+
+                                    <div class='info'>
+                                        <h3 class='title'> “Import deliveries” 
+                                        </h3>
+                                        <a href="services3.html">
+
+                                            <p class='p-1 pt-3 text-sm'>
+                                                Client support at all stages of shipping 24 hours a day, 7 days a week, 365 days a year!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="card">
+                                <div class="scale-image" style="background-image: url('./assets/slide3.png');">
+
+                                    <div class='info'>
+                                        <h3 class='title'> “Export deliveries”
+                                        </h3>
+                                        <a href="services1.html">
+
+                                            <p class='p-1 pt-3 text-sm'>
+                                                We provide the wide spectrum and high quality railway transportation services. 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="card">
+                                <div class="scale-image" style="background-image: url('./assets/slide5.png');">
+
+                                    <div class='info'>
+                                        <h3 class='title'> “Transit deliveries” 
+                                        </h3>
+                                        <a href="services4.html">
+
+                                            <p class='p-1 pt-3 text-sm'>
+                                                Affordable pricing of transit railway rates  is what we constantly strive for. We value our customers, so they have an opportunity to get freight rates with discounts. Promos depend on your orders & routes.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="card">
+                                <div class="scale-image" style="background-image: url('./assets/slide1.png');">
+
+                                    <div class='info'>
+                                        <h3 class='title'> “Terminal and port handling”
+                                        </h3>
+                                        <a href="Services5.html">
+
+                                            <p class='p-1 pt-3 text-sm'>
+                                                As a process port terminal handling of cargoes comprises a variety of operations.We are offering handling services suitable for every type of cargo - from containerised general cargo to bulk cargo, from project and plant to liquids.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                             
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+               
+              
+            </div>
+
+
+        </section>
+    </div>
+
+
+
+
+   
+    <footer>
+        <div class="footer-content   md:max-w-[90%] md:mx-auto">
+            <div class="footer-content-first-grid">
+                <div >
+                    <div class="flex justify-center md:block">
+                        <img src="./assets/footer-logo.png" class="h-20 w-20  md:h-[168px] md:w-[168px] " alt="">
+                    </div>
+                    <div class="w-[316px]">
+                        <p class="hidden md:visible text-[12px] text-[##7C7777]">“EL LOGISTICS GROUP ” CJSC- your authorized railway
+                            freight agent in Azerbaijan</p>
+                            <p class="visible md:hidden text-[12px] text-[##7C7777] text-center">This site and all content is copyright © 2021 Ellogistics Pty Ltd. </p>
+                    </div>
+
+                </div>
+                <div class="footer-icons mt-10">
+                    <h4 class="hidden md:visible text-[#525252] font-semibold">Follow us</h4>
+                    <div class="icons ml-1 ">
+                        <span class="text-[#4D4D4D] pr-1"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="text-[#4D4D4D] pr-1 "><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="text-[#4D4D4D] pr-1"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[#4D4D4D] pr-1"><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-content-second-grid mt-4">
+                <h3 class="text-black text-lg font-semibold">About us</h3><br>
+                <ul class="text-[#7C7777] text-[14px]">
+                    <li class="pb-1">Who we are </li>
+                    <li class="pb-1">Your career</li>
+                    <li>How we do</li>
+                </ul>
+            </div>
+            <div class="  footer-content-third-grid mt-4">
+                <h3 class="text-black text-lg font-semibold mb-5">Services</h3>
+                <ul class="text-[#7C7777] text-[14px]">
+
+                    <li class="pb-1">Inland railway transportation </li>
+                    <li class="pb-1">Terminal and port handling </li>
+                    <li class="pb-1">Import deliveries</li>
+                    <li class="pb-1">Export deliveries </li>
+                    <li class="pb-1">Transit deliveries </li>
+                </ul>
+                <div class="mt-12 ">
+                    <p class="text-[#7C7777] text-[14px] ">
+                        This site and all content is copyright © 2022 “EL LOGISTICS GROUP ” CJSC. The “EL LOGISTICS GROUP ” CJSC content or images may not be used or reproduced by any means without written authorisation.</p>
+                </div>
+            </div>
+            <div class="footer-content-fourth-grid mt-4">
+
+                <h3 class="text-black text-lg font-semibold mb-5">Our Mission</h3>
+                <ul class="text-[#7C7777] text-[14px] ">
+                    <li class="pb-1">Excellent customer experience</li>
+                    <li class="pb-1">Very competitive rates</li>
+                    <li class="pb-1">Smart KPI</li>
+                    <li>Client confidentiality</li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="footer-content-fifth-grid mt-4">
+                <h3 class="text-black text-lg font-semibold mb-5">Contacts</h3>
+                <ul class="text-[#7C7777] text-[14px]">
+                    <li class="pb-1"><span><i class="fa-solid fa-phone"></i></span> (+99450) 272 49 49
+                    </li>
+                    <li class="pb-1"><span><i class="fa-solid fa-phone"></i></span> (+99412) 555 23 43</li>
+                    <li class="pb-1"> <span><i class="fa-regular fa-envelope"></i></span> info@ellogistics.az</li>
+                    <li class="pb-1"> <span><i class="fa-regular fa-location-dot"></i></span>
+                        AZ1025, 15 “8 Noyabr” Avenue, Azure Business Center, 24th Floor, Khatai district, Baku,
+                        Azerbaijan
+                    </li>
+                </ul>
+                <div>
+                    <div class="mb-2 mt-4">
+                        <input type="" id="first_name"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm   block w-full p-2.5 "
+                            placeholder="John" required>
+                    </div>
+                    <div class="flex justify-end">
+                        <button
+                            class="bg-[#EC2D3A] flex justify-center items-center text-white font-bold py-2 px-8 rounded">
+                            Send <span class="ml-2"><img src="./assets/arrow.png" alt=""></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"
+        integrity="sha512-E9vR5BfN3bwSc45BWl95328hvOcBYjMzKAKgdNM59yQXpTC4glztZyVoFJRp5qPc5A95zUZ8D5N7kEwUtJ9f6w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"
+        integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script>
+        var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("ion");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active1");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active1", "");
+  }
+  this.className += " active1";
+  });
+}
+    </script>
+    <script>
+  $(function(){
+    $('.hamburger-menu').click(function(){
+        $('.sliding-navbar').toggleClass('sliding-navbar--open');
+        $('.mask').toggleClass('show')
+        $('.hamburger').toggleClass('menu-opened');
+    });
+
+    $('.mask').click(function(){
+        $('.sliding-navbar').toggleClass('sliding-navbar--open');
+        $('.mask').removeClass('show');
+        $('.hamburger').toggleClass('menu-opened');
+    })
+});
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+
+        var tabs = document.querySelectorAll(".tabs ul li");
+        var tab_wraps = document.querySelectorAll(".tab_wrap");
+
+        tabs.forEach(function (tab, tab_index) {
+            tab.addEventListener("click", function () {
+                tabs.forEach(function (tab) {
+                    tab.classList.remove("active");
+                })
+                tab.classList.add("active");
+
+                tab_wraps.forEach(function (content, content_index) {
+                    if (content_index == tab_index) {
+                        content.style.display = "block";
+                    }
+                    else {
+                        content.style.display = "none";
+                    }
+                })
+
+            })
+        })
+
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+
+
+
+        $(".card").hover(function () {
+            if ($(this).hasClass("active")) {
+                $(".card .bottom").slideUp(function () {
+                    $(".card").removeClass("active")
+                })
+            } else {
+                $(".card").addClass("active");
+                $(".card .bottom").stop().slideDown();
+
+            }
+        })
+
+
+
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+                speed: 600,
+                draggable: true,
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
+        $(document).ready(function () {
+
+            $("#tile-1 .nav-tabs a").click(function () {
+
+                var position = $(this).parent().position();
+
+                var width = $(this).parent().width();
+
+                $("#tile-1 .slider").css({ "left": + position.left, "width": width });
+
+            });
+            var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
+
+            var actPosition = $("#tile-1 .nav-tabs .active").position();
+
+            $("#tile-1 .slider").css({ "left": + actPosition.left, "width": actWidth });
+
+        });
+
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "10%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+
+    </script>
+
+</body>
+
+</html>
